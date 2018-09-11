@@ -1,0 +1,36 @@
+
+html {
+  /*
+     Изменяем блочную модель.
+     Свойство width теперь влючает padding и border
+  */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: $black-shaft;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+}
+
+img {
+    /* запрет картинкам выпадать за границы своего блока */
+    max-width: 100%;
+
+    /* сохранение пропорций по картинок по вертикали при уменьшении*/
+    height: auto;
+}

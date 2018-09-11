@@ -1,0 +1,26 @@
+.search-hotel {
+    padding: 30px 20px 50px 20px;
+
+    text-align: center;
+}
+
+.search-hotel__title {
+    @include reset-mar-pad;
+
+    margin-bottom: 30px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-hotel__description {
+    @include reset-mar-pad;
+
+    margin-bottom: 40px;
+    padding: 0 5px;
+
+    line-height: 24px;
+    text-transform: uppercase;
+
+
+}

@@ -1,0 +1,13 @@
+.promo {
+    background-color: gray;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url('../img/bg-back-mobile@1x.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    background-size: auto, auto;
+    height: 390px;
+}
+
+.promo__wrapper {
+  text-align: center;
+  padding-top: 90px;
+}
