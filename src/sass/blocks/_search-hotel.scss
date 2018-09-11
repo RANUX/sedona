@@ -24,3 +24,17 @@
 
 
 }
+
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .search-hotel {
+    padding: 60px 155px;
+  }
+
+  .search-hotel__description {
+    padding: 0;
+  }
+}

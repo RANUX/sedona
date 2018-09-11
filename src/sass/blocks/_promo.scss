@@ -1,13 +1,37 @@
 .promo {
-    background-color: gray;
-    background-image: url("../img/bg-intro-triangle-mobile.svg"), url('../img/bg-back-mobile@1x.jpg');
+    background-color: $white;
+    background-image: url("../img/bg-intro-triangle-mobile.svg"),
+                      url('../img/bg-back-mobile@1x.jpg');
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, center top;
-    background-size: auto, auto;
+    background-size: auto, cover;
     height: 390px;
 }
 
 .promo__wrapper {
   text-align: center;
   padding-top: 90px;
+}
+
+/*************************************
+ * Tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .promo {
+    background-color: $white;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"),
+                      url('../img/bg-back-tablet@1x.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    background-size: auto, cover;
+    height: 518px;
+  }
+
+  .promo__text-image {
+    width: 460px;
+  }
+
+  .promo__wrapper {
+    padding-top: 77px;
+  }
 }

@@ -18,3 +18,24 @@
   text-align: center;
 
 }
+
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .page-footer__hashtag {
+    margin: 0;
+  }
+
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer {
+    padding: 37px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

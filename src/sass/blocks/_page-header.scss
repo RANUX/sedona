@@ -1,6 +1,5 @@
 .page-header {
     position: relative;
-    width: 768px;
     margin: 0 auto;
 }
 
@@ -53,6 +52,9 @@
  * Tablet styles
  *************************************/
 @media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+  }
 
   .page-header__menu-bar {
     display: none;
