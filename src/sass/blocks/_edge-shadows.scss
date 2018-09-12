@@ -1,0 +1,33 @@
+.edge-shadows {
+
+  /*************************************
+   * desktop styles
+   *************************************/
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+
+        width: 15px;
+        height: 100%;
+
+        box-shadow: -15px 0 10px -19px inset;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 0;
+
+        width: 15px;
+        height: 100%;
+
+        box-shadow: 15px 0 10px -19px inset;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.main {
+    display: block;
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+    .main {
+        width: $desktop-width;
+        margin: 0 auto;
+    }
+}

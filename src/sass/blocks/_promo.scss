@@ -35,3 +35,20 @@
     padding-top: 77px;
   }
 }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .promo {
+    width: $desktop-width;
+    margin: 0 auto;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"),
+                      url('../img/bg-back-desktop@1x.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, center top;
+    background-size: auto, cover;
+    height: 518px;
+  }
+
+}

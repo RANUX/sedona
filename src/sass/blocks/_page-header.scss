@@ -1,4 +1,5 @@
 .page-header {
+    background-color: $white;
     position: relative;
     margin: 0 auto;
 }
@@ -63,4 +64,23 @@
   .page-header__logo {
     top: 0;
   }
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: $desktop-width;
+  }
+
+  .page-header__logo {
+    margin-left: -93.5px;
+  }
+
+  .page-header__logo-image {
+      width: 187px;
+      height: 96px;
+  }
+
 }

@@ -24,6 +24,16 @@
  * tablet styles
  *************************************/
 @media (min-width: $tablet-width) {
+  .page-footer {
+    width: 768px;
+    margin: 0 auto;
+    background-color: $white;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .page-footer__hashtag {
     margin: 0;
   }
@@ -31,11 +41,15 @@
   .page-footer__social {
     margin: 0;
   }
+}
 
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
   .page-footer {
-    padding: 37px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: $desktop-width;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }

@@ -26,8 +26,6 @@
   }
 }
 
-
-
 .reason__info-wrapper {
 
   width: 320px;
@@ -52,12 +50,11 @@
   position: relative;
 
   margin-bottom: 15px;
+  padding: 0 20px;
 
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-
-
 
   &--black {
     color: $black;
@@ -158,6 +155,8 @@
 .reason__picture {
   display: block;
   width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
 
 /*************************************
@@ -168,16 +167,8 @@
     display: flex;
   }
 
-  .reason__info-wrapper {
-    &--white {
-
-    }
-  }
-
   .reason__info {
-
     width: 256px;
-
 
     &--triangle {
       background-image: none;
@@ -188,15 +179,77 @@
   .reason__info-wrapper {
       @include reset-mar-pad;
       width: auto;
-      padding: 45px;
+      padding: 40px 40px;
 
       &--gray {
         border: none;
       }
+
+      &--white {
+        padding-top: 160px;
+        padding-bottom: 65px;
+        text-align: center;
+      }
+  }
+
+  .reason__title {
+    &--house {
+      &::before {
+        width: 75px;
+        height: 72px;
+        top: -100px;
+        left: 50%;
+        margin-left: -37.5px;
+      }
+    }
+
+    &--food {
+      &::before {
+        width: 77px;
+        height: 70px;
+        top: -98px;
+        left: 50%;
+        margin-left: -38.5px;
+      }
+    }
+
+    &--gift {
+      &::before {
+        width: 64px;
+        height: 76px;
+        top: -104px;
+        left: 50%;
+        margin-left: -37.5px;
+      }
+    }
   }
 
   .reason__picture {
-    height: 100%;
+    height: 256px;
+  }
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .reason__info {
+    width: 400px;
+  }
+
+  .reason__info-wrapper {
+    padding: 60px 70px;
+
+    &--white {
+      padding-top: 160px;
+      padding-bottom: 85px;
+      text-align: center;
+    }
+  }
+
+  .reason__picture {
+    width: 800px;
+    object-fit: cover;
   }
 
 }
