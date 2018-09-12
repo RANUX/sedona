@@ -1,3 +1,3 @@
 ## Адаптивная верстка Седоны
 
-Главная страница: https://ranux.github.io/sedona/
+Главная страница: https://ranux.github.io/sedona/build/index.html
