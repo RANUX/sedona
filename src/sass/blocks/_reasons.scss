@@ -1,29 +1,4 @@
 
-.reasons__header {
-    width: 320px;
-    margin: 0 auto;
-    padding: 40px 20px 30px 20px;
-
-    text-align: center;
-}
-
-.reasons__title {
-    @include reset-mar-pad
-    margin-bottom: 35px;
-
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-}
-
-.reasons__description {
-  @include reset-mar-pad;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
 .reasons__list {
   @include reset-list;
   display: flex;
@@ -68,13 +43,6 @@
  * tablet styles
  *************************************/
 @media (min-width: $tablet-width) {
-
-  .reasons__header {
-    width: 490px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px 0;
-  }
 
   .reasons__list {
     flex-direction: row;

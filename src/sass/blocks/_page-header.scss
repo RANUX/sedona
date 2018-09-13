@@ -5,15 +5,12 @@
 }
 
 .page-header__open-nav-button {
+    @include reset-button;
     position: relative;
 
     width: 23px;
     height: 23px;
     margin-right: 20px;
-
-    cursor: pointer;
-
-    @include reset-button;
 }
 
 .page-header__open-nav-button::before {

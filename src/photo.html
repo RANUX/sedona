@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Седона</title>
+  <script src="js/svgxuse.js" charset="utf-8" defer></script>
+</head>
+
+<body class="no-js">
+  <header class="page-header edge-shadows">
+    <nav class="main-nav main-nav__opened">
+      <button class="main-nav__close-button" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      <ul class="main-nav__list menu">
+        <li class="menu__item">
+          <a class="menu__link">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Фото и видео</a>
+        </li>
+        <li class="menu__item menu__item--spacer">
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Лого Седона" width="102" height="83">
+        </picture>
+      </a>
+    <div class="page-header__menu-bar">
+      <button class="page-header__open-nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+  </header>
+  <main class="main edge-shadows">
+    <div class="promo promo--inner">
+      <div class="promo__wrapper promo__wrapper--inner">
+        <img class="promo__text-image" src="img/text-sedona.svg" width="280" height="213" alt="Промо текст Седона">
+
+
+
+      </div>
+    </div>
+    <article class="photo-video">
+      <header class="content-header">
+        <h1 class="content-header__title">Фото и видео</h1>
+        <p class="content-header__description">Не можете решиться на путешествие из-за курса? Фотографии помогут &nbsp;&nbsp;вам забыть о политике и экономике.</p>
+      </header>
+      <ul class="gallery">
+        <li class="gallery__item">
+          <article class="gallery-image">
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/photo-1-desktop@2x.jpg 2x, img/photo-1-desktop@1x.jpg 1x">
+                  <source media="(min-width:768px)" srcset="img/photo-1-tablet@2x.jpg 2x, img/photo-1-tablet@1x.jpg 1x">
+                  <source media="(min-width:320px)" srcset="img/photo-1-mobile@2x.jpg 2x, img/photo-1-mobile@1x.jpg 1x">
+                  <img class="gallery-image__image" src="img/photo-1-desktop@1x.jpg" alt="Sedona">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Неродные просторы</h2>
+                <p class="gallery-image__author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">1350</span>
+              </div>
+            </section>
+          </article>
+        </li>
+        <li class="gallery__item">
+          <article class="gallery-image">
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/photo-2-desktop@2x.jpg 2x, img/photo-2-desktop@1x.jpg 1x">
+                  <source media="(min-width:768px)" srcset="img/photo-2-tablet@2x.jpg 2x, img/photo-2-tablet@1x.jpg 1x">
+                  <source media="(min-width:320px)" srcset="img/photo-2-mobile@2x.jpg 2x, img/photo-2-mobile@1x.jpg 1x">
+                  <img class="gallery-image__image" src="img/photo-2-desktop@1x.jpg" alt="Sedona">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Местная растительность</h2>
+                <p class="gallery-image__author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">143</span>
+              </div>
+            </section>
+          </article>
+        </li>
+        <li class="gallery__item">
+          <article class="gallery-image">
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/photo-3-desktop@2x.jpg 2x, img/photo-3-desktop@1x.jpg 1x">
+                  <source media="(min-width:768px)" srcset="img/photo-3-tablet@2x.jpg 2x, img/photo-3-tablet@1x.jpg 1x">
+                  <source media="(min-width:320px)" srcset="img/photo-3-mobile@2x.jpg 2x, img/photo-3-mobile@1x.jpg 1x">
+                  <img class="gallery-image__image" src="img/photo-3-desktop@1x.jpg" alt="Sedona">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Дорога на север</h2>
+                <p class="gallery-image__author">Автор фото: Петр</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">96</span>
+              </div>
+            </section>
+          </article>
+        </li>
+        <li class="gallery__item">
+          <article class="gallery-image">
+            <div class="gallery-image__wrapper">
+              <a class="gallery-image__link" href="#">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@1x.jpg 1x">
+                  <source media="(min-width:768px)" srcset="img/photo-4-tablet@2x.jpg 2x, img/photo-4-tablet@1x.jpg 1x">
+                  <source media="(min-width:320px)" srcset="img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@1x.jpg 1x">
+                  <img class="gallery-image__image" src="img/photo-4-desktop@1x.jpg" alt="Sedona">
+                </picture>
+              </a>
+            </div>
+            <section class="gallery-image__footer">
+              <div class="gallery-image__sign">
+                <h2 class="gallery-image__title">Мост дьявола</h2>
+                <p class="gallery-image__author">Автор фото: Антон</p>
+              </div>
+              <div class="gallery-image__likes likes">
+                <button class="likes__like-button" type="submit">
+                  <svg class="likes__icon-like" width="24" height="22">
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </button>
+                <span class="likes__count">254</span>
+              </div>
+            </section>
+          </article>
+        </li>
+
+      </ul>
+      <section class="video">
+        <header class="video__header">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__description">Смотрите видеопрезентацию и <br> скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </header>
+        <div class="video__clip">
+          <div class="video__image-poster">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/video-desktop@2x.jpg 2x, img/video-desktop@1x.jpg 1x">
+              <source media="(min-width:768px)" srcset="img/video-tablet@2x.jpg 2x, img/video-tablet@1x.jpg 1x">
+              <source media="(min-width:320px)" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x">
+              <img class="video__image" src="img/video-desktop@1x.jpg" alt="Video Sample">
+          </picture>
+          </div>
+          <div class="video__controls">
+            <div class="video__scroll-bar"></div>
+            <div class="video__control-buttons">
+              <button class="video__button video__button--replay">
+                <svg class="video__icon-replay" width="24" height="22">
+                  <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+                </svg>
+            </button>
+              <button class="video__button video__button--subtitles">
+                <svg class="video__icon-subtitles" width="24" height="22">
+                  <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+                </svg>
+            </button>
+              <button class="video__button video__button--fullscreen">
+                <svg class="video__icon-fullscreen" width="24" height="22">
+                  <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+                </svg>
+            </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="page-footer edge-shadows">
+    <a href="#" class="page-footer__hashtag hashtag">#visitsedona</a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в Твиттер</span>
+              <svg class="social__icon-twitter" width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg class="social__icon-facebook" width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в YouTube</span>
+              <svg class="social__icon-youtube" width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <p class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="#">
+          <svg class="copyright__icon-htmlacademy" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
+    </p>
+  </footer>
+  <script src="js/main-nav.js" charset="utf-8"></script>
+</body>
+
+</html>

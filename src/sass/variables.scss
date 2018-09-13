@@ -13,10 +13,20 @@ $black-shaft: #333333;
 $gray-iron: #d6d6d6;
 $gray-gallery: #eeeeee;
 $gray-concrete: #f2f2f2;
+$silver-chalice: #b2b2b2;
+$black-nevada: #5c6870;
+$silver: #b8b8b8;
 
 $body-bg-color: $gray-concrete;
 
 /* Sizes */
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
+
+/* Video player controls */
+$color-video-control: $black-nevada;
+$color-video-control-hover: $black-shaft;
+$color-video-control-active: $silver;
+$color-video-bg: $gray-concrete;

@@ -1,0 +1,25 @@
+.gallery-image {
+  @include container-mobile;
+  margin-bottom: 20px;
+}
+
+.gallery-image__wrapper {
+  margin-bottom: 20px;
+}
+
+.gallery-image__image {
+  display: block;
+}
+
+.gallery-image__title {
+  @include reset-mar-pad;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.gallery-image__author {
+  @include reset-mar-pad;
+  color: $black-shaft;
+  margin-bottom: 10px;
+}

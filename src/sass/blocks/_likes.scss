@@ -1,0 +1,15 @@
+.likes {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes__like-button {
+  @include reset-button;
+  fill: $silver-chalice;
+}
+
+.likes__count {
+  font-weight: bold;
+}

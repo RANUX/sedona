@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Седона</title>
+  <script src="js/svgxuse.js" charset="utf-8" defer></script>
+</head>
+
+<body class="no-js">
+  <header class="page-header edge-shadows">
+    <nav class="main-nav main-nav__opened">
+      <button class="main-nav__close-button" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      <ul class="main-nav__list menu">
+        <li class="menu__item">
+          <a class="menu__link">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Фото и видео</a>
+        </li>
+        <li class="menu__item menu__item--spacer">
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Лого Седона" width="102" height="83">
+        </picture>
+      </a>
+    <div class="page-header__menu-bar">
+      <button class="page-header__open-nav-button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+  </header>
+  <main class="main edge-shadows">
+    <div class="promo promo--inner">
+      <div class="promo__wrapper promo__wrapper--inner">
+        <img class="promo__text-image" src="img/text-sedona.svg" width="280" height="213" alt="Промо текст Седона">
+        </div>
+    </div>
+  </main>
+  <footer class="page-footer edge-shadows">
+    <a href="#" class="page-footer__hashtag hashtag">#visitsedona</a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в Твиттер</span>
+              <svg class="social__icon-twitter" width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg class="social__icon-facebook" width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+              <span class="visually-hidden">Мы в YouTube</span>
+              <svg class="social__icon-youtube" width="18" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <p class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="#">
+          <svg class="copyright__icon-htmlacademy" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
+    </p>
+  </footer>
+  <script src="js/main-nav.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.gallery {
+  @include reset-list;
+}
+
+.gallery__item {
+  @include container-mobile;
+  padding: 0;
+  padding-top: 22px;
+  border-top: 1px solid $gray-iron;
+
+  &:last-child {
+    border-bottom: 1px solid $gray-iron;
+  }
+}

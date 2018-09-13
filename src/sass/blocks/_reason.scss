@@ -28,8 +28,7 @@
 
 .reason__info-wrapper {
 
-  width: 320px;
-  margin: 0 auto;
+  @include container-mobile;
   padding: 45px 20px;
 
   &--gray {

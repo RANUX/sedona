@@ -1,0 +1,35 @@
+.content-header {
+    @include container-mobile;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.content-header__title {
+    @include reset-mar-pad
+    margin-bottom: 35px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.content-header__description {
+  @include reset-mar-pad;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .content-header {
+    width: 490px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+  }
+}

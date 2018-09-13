@@ -6,11 +6,21 @@
     background-position: bottom, center top;
     background-size: auto, cover;
     height: 390px;
+
+    &--inner {
+      height: 158px;
+      background-size: auto, auto;
+      background-position: left bottom, left bottom;
+    }
 }
 
 .promo__wrapper {
   text-align: center;
   padding-top: 90px;
+
+  &--inner {
+    padding-top: 52px;
+  }
 }
 
 /*************************************

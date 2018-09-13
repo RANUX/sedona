@@ -14,5 +14,27 @@
     padding: 0;
 
     background: none;
-    border: none;
+    border: transparent;
+
+    cursor: pointer;
+}
+
+@mixin fix-center-mobile {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@mixin fix-center-tablet {
+  width: $tablet-width;
+  margin: 0 auto;
+}
+
+@mixin fix-center-desktop {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+
+@mixin container-mobile {
+  @include fix-center-mobile;
+  padding: 0 20px;
 }
