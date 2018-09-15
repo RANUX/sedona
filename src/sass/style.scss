@@ -2,28 +2,32 @@
 @import "variables";
 @import "mixins";
 @import "scaffolding";
-@import "blocks/button";
-@import "blocks/visually-hidden";
-@import "blocks/edge-shadows";
-@import "blocks/page-header";
-@import "blocks/main-nav";
-@import "blocks/menu";
-@import "blocks/main";
-@import "blocks/promo";
-@import "blocks/reasons-header";
-@import "blocks/reasons";
-@import "blocks/reason";
-@import "blocks/search-hotel";
-@import "blocks/search-form";
-@import "blocks/map";
-@import "blocks/page-footer";
-@import "blocks/hashtag";
-@import "blocks/social";
-@import "blocks/copyright";
+@import "blocks/common/button";
+@import "blocks/common/visually-hidden";
+
+@import "blocks/common/page-header";
+@import "blocks/common/main-nav";
+@import "blocks/common/menu";
+
+@import "blocks/common/edge-shadows";
+@import "blocks/common/main";
+
+@import "blocks/common/page-footer";
+@import "blocks/common/hashtag";
+@import "blocks/common/social";
+@import "blocks/common/copyright";
+
+@import "blocks/index/promo";
+@import "blocks/index/reasons-header";
+@import "blocks/index/reasons";
+@import "blocks/index/reason";
+@import "blocks/index/search-hotel";
+@import "blocks/index/map";
+
 // Photo page classes
-@import "blocks/photo-video-header";
-@import "blocks/gallery";
-@import "blocks/gallery-image";
-@import "blocks/likes";
-@import "blocks/video";
-@import "blocks/photo-video";
+@import "blocks/photo/photo-video-header";
+@import "blocks/photo/gallery";
+@import "blocks/photo/gallery-image";
+@import "blocks/photo/likes";
+@import "blocks/photo/video";
+@import "blocks/photo/photo-video";
