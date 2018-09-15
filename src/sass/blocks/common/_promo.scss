@@ -38,8 +38,8 @@
 
     &--inner {
       height: 290px;
-      background-size: auto, auto;
       background-position: left bottom, left bottom;
+      background-size: contain, cover;
     }
   }
 

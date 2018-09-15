@@ -278,8 +278,8 @@ input[type="radio"].visually-hidden {
     height: 518px; }
     .promo--inner {
       height: 290px;
-      background-size: auto, auto;
-      background-position: left bottom, left bottom; }
+      background-position: left bottom, left bottom;
+      background-size: contain, cover; }
   .promo__text-image {
     width: 460px; }
   .promo__wrapper {
