@@ -37,6 +37,10 @@
     background-color: $gray-concrete;
     display: flex;
     justify-content: space-between;
+
+    &--grayish {
+      background-color: $gray-gallery-ea;
+    }
   }
 
   .gallery-image__author {
