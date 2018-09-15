@@ -1,11 +1,11 @@
-.content-header {
+.reasons-header {
     @include container-mobile;
     padding-top: 40px;
     padding-bottom: 30px;
     text-align: center;
 }
 
-.content-header__title {
+.reasons-header__title {
     @include reset-mar-pad
     margin-bottom: 35px;
 
@@ -15,7 +15,7 @@
     text-transform: uppercase;
 }
 
-.content-header__description {
+.reasons-header__description {
   @include reset-mar-pad;
   font-size: 14px;
   line-height: 26px;
@@ -26,10 +26,11 @@
  * tablet styles
  *************************************/
 @media (min-width: $tablet-width) {
-  .content-header {
+  .reasons-header {
     width: 490px;
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
+
   }
 }

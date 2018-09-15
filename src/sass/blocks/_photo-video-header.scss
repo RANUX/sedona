@@ -1,0 +1,42 @@
+.photo-video-header {
+    @include container-mobile;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.photo-video-header__title {
+    @include reset-mar-pad
+    margin-bottom: 35px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.photo-video-header__description {
+  @include reset-mar-pad;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .photo-video-header {
+    @include container-tablet;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .photo-video-header__title {
+    font-size: 30px;
+  }
+
+  .photo-video-header__description {
+    padding: 0 110px;
+  }
+}

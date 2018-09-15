@@ -1,10 +1,5 @@
 .gallery-image {
   @include container-mobile;
-  margin-bottom: 20px;
-}
-
-.gallery-image__wrapper {
-  margin-bottom: 20px;
 }
 
 .gallery-image__image {
@@ -22,4 +17,28 @@
   @include reset-mar-pad;
   color: $black-shaft;
   margin-bottom: 10px;
+}
+
+.gallery-image__footer {
+  padding: 20px 20px;
+}
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .gallery-image {
+    padding: 0;
+    width: 100%;
+  }
+
+  .gallery-image__footer {
+    background-color: $gray-concrete;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gallery-image__author {
+    margin-bottom: 0;
+  }
 }

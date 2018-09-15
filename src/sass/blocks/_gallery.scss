@@ -3,12 +3,38 @@
 }
 
 .gallery__item {
-  @include container-mobile;
-  padding: 0;
+  @include fix-center-mobile;
   padding-top: 22px;
   border-top: 1px solid $gray-iron;
 
   &:last-child {
     border-bottom: 1px solid $gray-iron;
+  }
+}
+
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+  }
+
+  .gallery__item {
+    width: 324px;
+    margin: 0;
+    border: none;
+    padding-top: 0;
+
+    &:last-child {
+      border: none;
+    }
+
+    &--landscape {
+      width: 648px;
+    }
   }
 }

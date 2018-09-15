@@ -7,6 +7,7 @@
 }
 
 .video__title {
+    @include reset-mar-pad;
     margin-bottom: 30px;
 
     font-size: 18px;
@@ -14,7 +15,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    @include reset-mar-pad;
+
 }
 
 .video__description {
@@ -101,4 +102,13 @@
 
 .video__icon-subtitles {
   margin-left: 20px;
+}
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .video__header {
+    @include container-tablet;
+  }
 }
