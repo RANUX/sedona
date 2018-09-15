@@ -1,12 +1,11 @@
 .video {
-    padding-top: 35px;
+    width: $mobile-width;
+    margin: 0 auto;
 }
 
 .video__header {
-  width: $mobile-width;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 35px 20px;
+
 }
 
 .video__title {
@@ -22,21 +21,11 @@
 .video__description {
   @include reset-mar-pad;
 
-  margin-bottom: 35px;
+  padding: 0 20px;
 
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.video__clip {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
-.video__image-poster {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .video__image {
@@ -84,18 +73,32 @@
 
 .video__control-buttons {
   display: flex;
+  align-items: center;
+  position: relative;
   background-color: $color-video-bg;
+  height: 70px;
 }
 
 .video__button {
   @include reset-button;
   background: transparent;
-  width: 65px;
-  height: 70px;
   fill: $color-video-control;
+  height: 20px;
+
+  &--replay {
+    min-width: 16px;
+    margin-left: 25px;
+  }
 
   &--subtitles {
+    min-width: 32px;
     margin-left: auto;
+    margin-right: 31px;
+  }
+
+  &--fullscreen {
+    min-width: 20px;
+    margin-right: 23px;
   }
 
   &:hover,
@@ -116,8 +119,85 @@
  * tablet styles
  *************************************/
 @media (min-width: $tablet-width) {
+
+  .video {
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
   .video__header {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 65px 60px;
+  }
+
+  .video__title {
+    font-size: 30px;
+  }
+
+  .video__description {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .video__clip {
+    position: relative;
+    margin: 0 60px;
+  }
+
+  .video__image {
+    width: 100%;
+  }
+
+  .video__controls {
+    @include reset-mar-pad;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .video__scroll-bar {
+    height: 93px;
+
+    &::before {
+      width: 390px;
+      left: 44%;
+    }
+
+    &::after {
+      left: 29%;
+    }
+  }
+
+  .video__control-buttons {
+    position: absolute;
+    bottom: 0;
+    height: 93px;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .video__button {
+    fill: $color-video-control-tablet;
+
+    &--replay {
+      margin-left: 35px;
+    }
+
+    &--subtitles {
+      margin-left: auto;
+      margin-right: 31px;
+    }
+
+    &--fullscreen {
+      margin-right: 41px;
+    }
+
+    &:hover,
+    &:focus {
+      fill: $color-video-control-hover-tablet;
+    }
+
+    &:active {
+      fill: $color-video-control-active-tablet;
+    }
   }
 }

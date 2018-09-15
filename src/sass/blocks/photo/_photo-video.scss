@@ -1,3 +1,13 @@
+
 .photo-video__gallery {
   margin: 0 auto;
+}
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .photo-video {
+    padding-bottom: 36px;
+  }
 }
