@@ -18,30 +18,3 @@
 
     cursor: pointer;
 }
-
-@mixin fix-center-mobile {
-  width: $mobile-width;
-  margin: 0 auto;
-}
-
-@mixin fix-center-tablet {
-  width: $tablet-width;
-  margin: 0 auto;
-}
-
-@mixin fix-center-desktop {
-  width: $desktop-width;
-  margin: 0 auto;
-}
-
-@mixin container-mobile {
-  @include fix-center-mobile;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@mixin container-tablet {
-  @include fix-center-tablet;
-  padding-left: 60px;
-  padding-right: 60px;
-}

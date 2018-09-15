@@ -3,7 +3,10 @@
 }
 
 .video__header {
-  @include container-mobile;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .video__title {
@@ -14,22 +17,26 @@
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-
-
 }
 
 .video__description {
-    @include reset-mar-pad;
+  @include reset-mar-pad;
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 
-    line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video__clip {
+  width: $mobile-width;
+  margin: 0 auto;
 }
 
 .video__image-poster {
-  @include fix-center-mobile;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .video__image {
@@ -37,7 +44,8 @@
 }
 
 .video__controls {
-  @include container-mobile;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: -45px;
 }
 
@@ -109,6 +117,7 @@
  *************************************/
 @media (min-width: $tablet-width) {
   .video__header {
-    @include container-tablet;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }

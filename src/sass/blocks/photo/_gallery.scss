@@ -3,7 +3,8 @@
 }
 
 .gallery__item {
-  @include fix-center-mobile;
+  width: $mobile-width;
+  margin: 0 auto;
   padding-top: 22px;
   border-top: 1px solid $gray-iron;
 
