@@ -11,3 +11,12 @@
     padding-bottom: 36px;
   }
 }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .photo-video {
+    padding-bottom: 60px;
+  }
+}

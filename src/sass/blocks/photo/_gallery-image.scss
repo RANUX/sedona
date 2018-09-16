@@ -21,7 +21,7 @@
 }
 
 .gallery-image__footer {
-  padding: 20px 20px;
+  padding: 12px 20px;
 }
 
 /*************************************
@@ -45,5 +45,24 @@
 
   .gallery-image__author {
     margin-bottom: 0;
+  }
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .gallery-image__footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $white;
+  }
+
+  .gallery-image__author {
+    color: $white;
   }
 }

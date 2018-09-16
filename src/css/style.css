@@ -283,7 +283,9 @@ input[type="radio"].visually-hidden {
   .promo__text-image {
     width: 460px; }
   .promo__wrapper {
-    padding-top: 77px; } }
+    padding-top: 77px; }
+    .promo__wrapper--inner {
+      padding-top: 100px; } }
 
 /*************************************
  * desktop styles
@@ -296,7 +298,13 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat, no-repeat;
     background-position: bottom, center top;
     background-size: auto, cover;
-    height: 518px; } }
+    height: 518px; }
+    .promo--inner {
+      height: 300px;
+      background-position: left bottom, left bottom;
+      background-size: contain, cover; }
+  .promo__wrapper--inner {
+    padding-top: 95px; } }
 
 .edge-shadows {
   /*************************************
@@ -323,7 +331,16 @@ input[type="radio"].visually-hidden {
         box-shadow: 15px 0 10px -19px inset; } }
 
 .main {
-  display: block; }
+  display: block;
+  background-color: #ffffff; }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .main {
+    max-width: 1200px;
+    margin: 0 auto; } }
 
 .page-footer {
   padding-left: 20px;
@@ -535,7 +552,6 @@ input[type="radio"].visually-hidden {
  *************************************/
 @media (min-width: 1200px) {
   .reasons {
-    background-color: #ffffff;
     width: 1200px;
     margin: 0 auto; }
   .reasons__list {
@@ -813,6 +829,18 @@ input[type="radio"].visually-hidden {
   .photo-video-header__description {
     padding: 0 110px; } }
 
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .photo-video {
+    width: 100%; }
+  .photo-video-header {
+    padding-left: 120px;
+    padding-right: 120px; }
+  .photo-video-header__description {
+    padding: 0 260px; } }
+
 .gallery {
   margin: 0;
   padding: 0;
@@ -842,7 +870,19 @@ input[type="radio"].visually-hidden {
     .gallery__item:last-child {
       border: none; }
     .gallery__item--landscape {
-      width: 648px; } }
+      width: 100%; } }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .gallery {
+    width: 100%; }
+  .gallery__item {
+    position: relative;
+    width: 400px; }
+    .gallery__item--landscape {
+      width: 100%; } }
 
 .gallery-image {
   padding-left: 20px;
@@ -865,7 +905,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px; }
 
 .gallery-image__footer {
-  padding: 20px 20px; }
+  padding: 12px 20px; }
 
 /*************************************
  * tablet styles
@@ -883,6 +923,21 @@ input[type="radio"].visually-hidden {
   .gallery-image__author {
     margin-bottom: 0; } }
 
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .gallery-image__footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff; }
+  .gallery-image__author {
+    color: #ffffff; } }
+
 .likes {
   display: flex;
   width: 70px;
@@ -898,6 +953,13 @@ input[type="radio"].visually-hidden {
 
 .likes__count {
   font-weight: bold; }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .likes__like-button {
+    fill: #ffffff; } }
 
 .video {
   width: 320px;
@@ -1042,6 +1104,20 @@ input[type="radio"].visually-hidden {
     .video__button:active {
       fill: #949494; } }
 
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .video {
+    width: 1200px; }
+  .video__header {
+    padding: 70px 200px; }
+  .video__description {
+    padding: 0 190px; }
+  .video__clip {
+    width: 800px;
+    margin: 0 auto; } }
+
 .photo-video__gallery {
   margin: 0 auto; }
 
@@ -1051,3 +1127,10 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .photo-video {
     padding-bottom: 36px; } }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .photo-video {
+    padding-bottom: 60px; } }

@@ -13,3 +13,12 @@
 .likes__count {
   font-weight: bold;
 }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .likes__like-button {
+    fill: $white;
+  }
+}

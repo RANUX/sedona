@@ -53,3 +53,22 @@
     padding: 0 110px;
   }
 }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+
+  .photo-video {
+    width: 100%;
+  }
+
+  .photo-video-header {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .photo-video-header__description {
+    padding: 0 260px;
+  }
+}

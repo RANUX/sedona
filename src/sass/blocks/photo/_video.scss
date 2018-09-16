@@ -201,3 +201,26 @@
     }
   }
 }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .video {
+    width: $desktop-width;
+  }
+
+  .video__header {
+    padding: 70px 200px;
+  }
+
+  .video__description {
+    padding: 0 190px;
+  }
+
+  .video__clip {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+}
