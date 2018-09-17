@@ -1,24 +1,27 @@
 .button {
-  display: block;
-  padding: 20px 0;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
 
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  color: $white;
-  text-transform: uppercase;
-  text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
 
-  background-color: $light-grey-blue;
+    background-color: $light-grey-blue;
+    border: 0;
 
-  &:hover,
-  &:focus {
-      background-color: $faded-blue;
-  }
+    &:hover,
+    &:focus {
+        background-color: $faded-blue;
+    }
 
-  &:active {
-      color: rgba($white, 0.3);
+    &:active {
+        color: rgba($white, 0.3);
 
-      background-color: $cool-blue;
-  }
+        background-color: $cool-blue;
+    }
 }

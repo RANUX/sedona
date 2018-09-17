@@ -1,0 +1,202 @@
+
+.form__fieldset-wrapper {
+    padding: 20px;
+    padding-bottom: 30px;
+
+    border-top: 1px solid $gray-iron;
+}
+
+.form__fieldset {
+    @include reset-mar-pad;
+    border: 0;
+
+    &--review {
+      margin-bottom: 50px;
+    }
+}
+
+.form__legend {
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    &--contacts {
+        margin-bottom: 25px;
+    }
+
+    &--sights {
+      text-align: center;
+    }
+}
+
+.form__group {
+    @include reset-mar-pad;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &--column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__label {
+    margin-right: 15px;
+
+    line-height: 26px;
+    color: $black-shaft;
+    text-transform: uppercase;
+
+    &--padding {
+        margin-bottom: 10px;
+        margin-left: 22px;
+    }
+}
+
+.form__input-icon-group {
+    display: flex;
+}
+
+.form__input {
+    width: 100%;
+    min-width: 0;               // Firefox hack https://github.com/philipwalton/flexbugs/issues/152
+    padding: 20px;
+
+    font-weight: bold;
+    font-size: 18px;
+
+    background-color: $gray-concrete;
+    border: none;
+
+    &--textarea {
+      min-height: 160px;
+      resize: none;
+    }
+
+    &::placeholder {
+      color: $black;
+    }
+
+    &:hover {
+      background-color: $gray-mercury-e5;
+    }
+
+    &:focus {
+      background-color: $white;
+      border: 4px solid $gray-mercury-e5;
+      padding: 16px;
+    }
+}
+
+.form__icon {
+    min-width: 58px;
+
+    background-color: $gray-mercury-e5;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--telephone {
+        background-image: url("../img/icon-phone.svg");
+    }
+
+    &--email {
+        background-image: url("../img/icon-mail.svg");
+    }
+}
+
+.form__error-message {
+    display: none;
+}
+
+.form__selector-label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  &:last-child {
+      margin-bottom: 0;
+  }
+}
+
+.form__selector-indicator {
+    position: relative;
+
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin-right: 22px;
+
+    background-color: $gray-concrete;
+
+    &--radio {
+      border-radius: 50%;
+    }
+
+    &--checkbox {
+      border-radius: 5px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $gray-mercury-e5;
+    }
+
+    &:active {
+        background-color: $gray-iron;
+        border: 1px solid $gray-iron;
+    }
+}
+
+.form__selector--radio:checked + .form__selector-indicator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    margin-left: -11px;
+
+    background-color: $black-shaft;
+    border-radius: 50%;
+}
+
+.form__selector--radio:checked + .form__selector-indicator:active::before {
+  opacity: 0.3;
+}
+
+.form__selector--checkbox:checked + .form__selector-indicator::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 24px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -12px;
+
+    background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.form__selector--checkbox:checked + .form__selector-indicator:active::before {
+  opacity: 0.3;
+}

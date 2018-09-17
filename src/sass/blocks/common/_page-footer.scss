@@ -18,6 +18,7 @@
 }
 
 .page-footer__copyright {
+  @include reset-mar-pad;
   text-align: center;
 
 }
