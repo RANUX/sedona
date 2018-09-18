@@ -1,5 +1,9 @@
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
 
-.form__fieldset-wrapper {
+.form__container {
     padding: 20px;
     padding-bottom: 30px;
 
@@ -43,10 +47,6 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 .form__label {
@@ -64,6 +64,7 @@
 
 .form__input-icon-group {
     display: flex;
+    width: 100%;
 }
 
 .form__input {
@@ -117,6 +118,11 @@
     display: none;
 }
 
+.form__selectors-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__selector-label {
   position: relative;
 
@@ -128,9 +134,6 @@
   font-size: 18px;
   line-height: 26px;
 
-  &:last-child {
-      margin-bottom: 0;
-  }
 }
 
 .form__selector-indicator {
@@ -199,4 +202,200 @@
 
 .form__selector--checkbox:checked + .form__selector-indicator:active::before {
   opacity: 0.3;
+}
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+
+  .feedback__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 55px;
+  }
+
+  .form__container {
+    padding: 0;
+    border-top: 0;
+  }
+
+  .form__container {
+
+    &--fullname {
+      position: relative;
+      order: 2;
+      width: 324px;
+      padding-left: 54px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 310px;
+        background-color: $gray-mercury-e5;
+        transform: rotate(90deg);
+        transform-origin: left;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &--communication {
+      padding-top: 50px;
+      order: 3;
+      width: 100%;
+    }
+
+    &--impression {
+      order: 1;
+      width: 324px;
+    }
+
+    &--sights {
+      padding-top: 36px;
+      order: 4;
+      width: 100%;
+    }
+
+    &--review {
+      padding-top: 50px;
+      order: 5;
+      width: 100%;
+    }
+
+    &--button {
+      padding-top: 55px;
+      order: 6;
+    }
+  }
+
+  .form__legend {
+    margin-bottom: 60px;
+    font-size: 21px;
+    width: 100%;
+
+    &--fullname {
+      margin-left: 0;
+    }
+
+    &--communication {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 125px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background: $gray-mercury-e5;
+        top: 50%;
+        left: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 125px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background: $gray-mercury-e5;
+        top: 50%;
+        right: 0;
+      }
+    }
+
+    &--impression {
+      margin-left: 0;
+    }
+
+    &--sights {
+      position: relative;
+      margin-bottom: 45px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 125px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background: $gray-mercury-e5;
+        top: 50%;
+        left: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 125px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background: $gray-mercury-e5;
+        top: 50%;
+        right: 0;
+      }
+    }
+
+    &--review {
+      position: relative;
+      text-align: center;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 125px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background: $gray-mercury-e5;
+        top: 50%;
+        left: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 125px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        background: $gray-mercury-e5;
+        top: 50%;
+        right: 0;
+      }
+    }
+  }
+
+  .form__legend-fixed-content {
+    display: inline-block;
+    width: 300px;
+  }
+
+  .form__selector-label {
+
+    &--impression {
+      margin-bottom: 26px;
+    }
+
+    &--sights {
+      width: 230px;
+    }
+  }
+
+  .form__selectors-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 460px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
 }

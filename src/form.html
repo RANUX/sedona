@@ -57,17 +57,17 @@
           <p class="feedback-header__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
         </header>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset form__fieldset--fullname">
-              <legend class="form__legend form__legend--full-name">Представьтесь:</legend>
-              <p class="form__group"> <label class="form__label" for="first-name">Имя*:</label> <input class="form__input" type="text" name="first-name" placeholder="Имя" value="Петр" required> </p>
-              <p class="form__group"> <label class="form__label" for="last-name">Фамилия*:</label> <input class="form__input" type="text" name="last-name" placeholder="Фамилия" value="Иванов" required> </p>
-              <p class="form__group"> <label class="form__label" for="middle-name">Отчество:</label> <input class="form__input" type="text" name="middle-name" placeholder="Отчество" value="Александрович"> </p>
+          <div class="form__container form__container--fullname">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend form__legend--fullname">Представьтесь:</legend>
+              <p class="form__group form__group--fullname"> <label class="form__label" for="first-name">Имя*:</label> <input class="form__input" type="text" name="first-name" placeholder="Имя" value="Петр" required> </p>
+              <p class="form__group form__group--fullname"> <label class="form__label" for="last-name">Фамилия*:</label> <input class="form__input" type="text" name="last-name" placeholder="Фамилия" value="Иванов" required> </p>
+              <p class="form__group form__group--fullname"> <label class="form__label" for="middle-name">Отчество:</label> <input class="form__input" type="text" name="middle-name" placeholder="Отчество" value="Александрович"> </p>
             </fieldset>
           </div>
-          <div class="form__fieldset-wrapper">
+          <div class="form__container form__container--communication">
             <fieldset class="form__fieldset form__fieldset--communication">
-              <legend class="form__legend form__legend--contacts">Контактная информация:</legend>
+              <legend class="form__legend form__legend--communication">Контактная информация:</legend>
               <div class="form__column">
                 <div class="form__group form__group--column">
                   <label class="form__label form__label--padding" for="telephone">
@@ -89,9 +89,9 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset form__fieldset--communication">
-              <legend class="form__legend form__legend--communication">Ваше общее впечатление:</legend>
+          <div class="form__container form__container--impression">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
               <label class="form__selector-label">
                 <input class="form__selector form__selector--radio visually-hidden" type="radio" name="radio" value="positive" checked>
                 <span class="form__selector-indicator form__selector-indicator--radio"></span>
@@ -109,34 +109,38 @@
               </label>
             </fieldset>
           </div>
-          <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset form__fieldset--sights">
-              <legend class="form__legend form__legend--sights">Посещенные достопримечательности:</legend>
-              <label class="form__selector-label">
-                <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked>
-                <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-                <span class="form__selector-text">Мост Дьявола</span>
-              </label><label class="form__selector-label">
-                <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked>
-                <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-                <span class="form__selector-text">Гора-Колокол</span>
-              </label><label class="form__selector-label">
-                <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked>
-                <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-                <span class="form__selector-text">Слайд-парк</span>
-              </label><label class="form__selector-label">
-                <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive">
-                <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
-                <span class="form__selector-text">Красные скалы</span>
-              </label>
+          <div class="form__container form__container--sights">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend form__legend--sights"><span class="form__legend-fixed-content">Посещенные достопримечательности:</span></legend>
+              <div class="form__selectors-wrapper">
+                <label class="form__selector-label form__selector-label--sights">
+                  <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked>
+                  <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
+                  <span class="form__selector-text">Мост Дьявола</span>
+                </label><label class="form__selector-label form__selector-label--sights">
+                  <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked>
+                  <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
+                  <span class="form__selector-text">Гора-Колокол</span>
+                </label><label class="form__selector-label form__selector-label--sights">
+                  <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive" checked>
+                  <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
+                  <span class="form__selector-text">Слайд-парк</span>
+                </label><label class="form__selector-label form__selector-label--sights">
+                  <input class="form__selector form__selector--checkbox visually-hidden" type="checkbox" name="checkbox" value="positive">
+                  <span class="form__selector-indicator form__selector-indicator--checkbox"></span>
+                  <span class="form__selector-text">Красные скалы</span>
+                </label>
+              </div>
             </fieldset>
           </div>
-          <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset form__fieldset--review">
+          <div class="form__container form__container--review">
+            <fieldset class="form__fieldset">
               <legend class="form__legend form__legend--review">Опишите свои эмоции:</legend>
               <textarea class="form__input form__input--textarea" name="name" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button class="button" type="submit">
+          </div>
+          <div class="form__container form__container--button">
+            <button class="button button--review" type="submit">
               <span class="button__text">Отправить отзыв</span>
             </button>
           </div>

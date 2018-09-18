@@ -25,3 +25,14 @@
         background-color: $cool-blue;
     }
 }
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .button {
+    &--review {
+      width: 324px;
+    }
+  }
+}

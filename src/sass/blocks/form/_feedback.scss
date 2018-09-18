@@ -2,3 +2,25 @@
   width: $mobile-width;
   margin: 0 auto;
 }
+
+/*************************************
+ * tablet styles
+ *************************************/
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+}
