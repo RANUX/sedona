@@ -4,4 +4,4 @@
 
 Фото и видео: https://ranux.github.io/sedona/build/photo.html
 
-Фото и видео: https://ranux.github.io/sedona/build/photo.html
+Обратная связь: https://ranux.github.io/sedona/build/form.html
