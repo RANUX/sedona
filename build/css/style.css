@@ -76,6 +76,13 @@ img {
   .button--review {
     width: 324px; } }
 
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .button--review {
+    width: 480px; } }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -1195,6 +1202,14 @@ input[type="radio"].visually-hidden {
   .feedback-header__description {
     padding: 0 260px; } }
 
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .feedback-header {
+    padding-left: 0;
+    padding-right: 0; } }
+
 .feedback {
   width: 320px;
   margin: 0 auto; }
@@ -1215,7 +1230,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1200px) {
   .feedback {
     width: 1200px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 120px; } }
 
 .feedback__form {
   display: flex;
@@ -1413,7 +1430,11 @@ input[type="radio"].visually-hidden {
     width: 100%; }
   .form__container--button {
     padding-top: 55px;
-    order: 6; }
+    order: 6;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #333333; }
   .form__legend {
     margin-bottom: 60px;
     font-size: 21px;
@@ -1507,3 +1528,29 @@ input[type="radio"].visually-hidden {
     width: 460px;
     margin: 0 auto;
     justify-content: space-between; } }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: 1200px) {
+  .form__container--fullname {
+    width: 480px; }
+  .form__container--impression {
+    width: 480px;
+    padding-left: 80px; }
+  .form__label-hidden {
+    display: none; }
+  .form__group-wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .form__group--column {
+    flex-direction: row; }
+  .form__group--phone {
+    width: 400px; }
+  .form__group--email {
+    width: 480px; }
+  .form__label--padding {
+    margin-left: 0; }
+  .form__selectors-wrapper {
+    flex-direction: row;
+    width: 100%; } }

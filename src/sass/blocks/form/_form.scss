@@ -449,6 +449,38 @@
     }
   }
 
+  .form__legend {
+      &--communication {
+        &::before {
+          width: 280px;
+        }
+
+        &::after {
+          width: 280px;
+        }
+      }
+
+      &--sights {
+        &::before {
+          width: 280px;
+        }
+
+        &::after {
+          width: 280px;
+        }
+      }
+
+      &--review {
+        &::before {
+          width: 280px;
+        }
+
+        &::after {
+          width: 280px;
+        }
+      }
+  }
+
   .form__selectors-wrapper {
     flex-direction: row;
     width: 100%;

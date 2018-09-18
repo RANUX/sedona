@@ -68,10 +68,10 @@
           <div class="form__container form__container--communication">
             <fieldset class="form__fieldset form__fieldset--communication">
               <legend class="form__legend form__legend--communication">Контактная информация:</legend>
-              <div class="form__column">
-                <div class="form__group form__group--column">
+                <div class="form__group-wrapper">
+                <div class="form__group form__group--column form__group--communication form__group--phone">
                   <label class="form__label form__label--padding" for="telephone">
-                    <span class="form__disable">Контактный&nbsp;</span>телефон*:
+                    <span class="form__label-hidden">Контактный&nbsp;</span>телефон*:
                   </label>
                   <div class="form__input-icon-group">
                     <input class="form__input form__input--contact-info" type="tel" id="telephone" name="telephone" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
@@ -79,14 +79,14 @@
                   </div>
                 </div>
                 <span class="form__error-message">Ошибка, перепроверьте номер</span>
-                <div class="form__group form__group--column">
+                <div class="form__group  form__group--column form__group--communication form__group--email">
                   <label class="form__label form__label--padding" for="email">Электронная почта*:</label>
                   <div class="form__input-icon-group">
                     <input class="form__input form__input--contact-info" id="email" type="email" name="email" placeholder="Введите e-mail" required="">
                     <span class="form__icon form__icon--email"></span>
                   </div>
                 </div>
-              </div>
+                </div>
             </fieldset>
           </div>
           <div class="form__container form__container--impression">
@@ -143,6 +143,7 @@
             <button class="button button--review" type="submit">
               <span class="button__text">Отправить отзыв</span>
             </button>
+            <p class="form__notice">* — обязательные поля</p>
           </div>
         </form>
       </section>
