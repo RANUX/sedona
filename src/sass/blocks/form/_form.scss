@@ -267,6 +267,10 @@
     &--button {
       padding-top: 55px;
       order: 6;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      color: $black-shaft;
     }
   }
 
@@ -398,4 +402,55 @@
     justify-content: space-between;
   }
 
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+
+  .form__container {
+    &--fullname {
+      width: 480px;
+    }
+
+    &--impression {
+      width: 480px;
+      padding-left: 80px;
+    }
+  }
+
+  .form__label-hidden {
+    display: none;
+  }
+
+  .form__group-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__group {
+    &--column {
+      flex-direction: row;
+    }
+
+    &--phone {
+      width: 400px;
+    }
+
+    &--email {
+      width: 480px;
+    }
+  }
+
+  .form__label {
+    &--padding {
+      margin-left: 0;
+    }
+  }
+
+  .form__selectors-wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
 }

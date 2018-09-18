@@ -36,3 +36,14 @@
     }
   }
 }
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  .button {
+    &--review {
+      width: 480px;
+    }
+  }
+}
