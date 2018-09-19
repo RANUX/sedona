@@ -254,6 +254,12 @@ input[type="radio"].visually-hidden {
     .menu__link:active {
       color: rgba(0, 0, 0, 0.3);
       background-color: #ffffff; }
+  .menu__link:not([href]) {
+    color: #766357; }
+    .menu__link:not([href]):hover, .menu__link:not([href]):focus {
+      color: #604e43; }
+    .menu__link:not([href]):active {
+      color: rgba(118, 99, 87, 0.3); }
   .menu__link:not([href]):hover, .menu__link:not([href]):focus {
     background: none; } }
 
@@ -1348,11 +1354,13 @@ input[type="radio"].visually-hidden {
     border-radius: 50%; }
   .form__selector-indicator--checkbox {
     border-radius: 5px; }
-  .form__selector-indicator:hover, .form__selector-indicator:focus {
-    background-color: #e5e5e5; }
   .form__selector-indicator:active {
     background-color: #d6d6d6;
     border: 1px solid #d6d6d6; }
+
+.form__selector:hover + .form__selector-indicator,
+.form__selector:focus + .form__selector-indicator {
+  background-color: #e5e5e5; }
 
 .form__selector--radio:checked + .form__selector-indicator::before {
   content: "";
