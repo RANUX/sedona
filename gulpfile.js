@@ -118,7 +118,7 @@ gulp.task("build", function(done) {
         "clean",
         "copy",
         "style-prod",
-        "sprite",
+        // "sprite",
         "html",
         done)
 });
