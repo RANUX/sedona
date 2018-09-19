@@ -1,8 +1,15 @@
 
+.map {
+  position: relative;
+  margin: 0 auto;
+  height: 350px;
+  overflow: hidden;
+}
+
 .map__picture {
   display: block;
   width: 100%;
-  height: 350px;
+
   // object-fit: cover;
 }
 
@@ -10,6 +17,10 @@
  * tablet styles
  *************************************/
 @media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-width;
+  }
+
   .map__picture {
     width: $tablet-width;
     margin: 0 auto;
@@ -20,6 +31,10 @@
  * desktop styles
  *************************************/
 @media (min-width: $desktop-width) {
+  .map {
+    width: $desktop-width;
+  }
+
   .map__picture {
     width: $desktop-width;
   }
