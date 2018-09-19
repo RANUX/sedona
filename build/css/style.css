@@ -1564,12 +1564,14 @@ input[type="radio"].visually-hidden {
   .form__group-wrapper {
     display: flex;
     justify-content: space-between; }
-  .form__group--column {
-    flex-direction: row; }
-  .form__group--phone {
-    width: 400px; }
-  .form__group--email {
-    width: 480px; }
+  .form__group {
+    align-items: center; }
+    .form__group--column {
+      flex-direction: row; }
+    .form__group--phone {
+      width: 400px; }
+    .form__group--email {
+      width: 480px; }
   .form__label--padding {
     margin-left: 0; }
   .form__legend--communication {

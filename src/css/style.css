@@ -1687,15 +1687,19 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .form__group--column {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  .form__group--phone {
-    width: 400px; }
-  .form__group--email {
-    width: 480px; }
+  .form__group {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .form__group--column {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .form__group--phone {
+      width: 400px; }
+    .form__group--email {
+      width: 480px; }
   .form__label--padding {
     margin-left: 0; }
   .form__legend--communication {

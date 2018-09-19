@@ -430,6 +430,8 @@
   }
 
   .form__group {
+    align-items: center;
+
     &--column {
       flex-direction: row;
     }
