@@ -57,7 +57,16 @@
   }
 
   .menu__link:not([href]) {
-    // color: $greyish-brown;
+    color: $greyish-brown;
+
+    &:hover,
+    &:focus {
+      color: $kabul;
+    }
+
+    &:active {
+      color: rgba($greyish-brown, 0.3);
+    }
   }
 
   .menu__link:not([href]) {

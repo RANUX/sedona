@@ -154,15 +154,15 @@
       border-radius: 5px;
     }
 
-    &:hover,
-    &:focus {
-        background-color: $gray-mercury-e5;
-    }
-
     &:active {
         background-color: $gray-iron;
         border: 1px solid $gray-iron;
     }
+}
+
+.form__selector:hover + .form__selector-indicator,
+.form__selector:focus + .form__selector-indicator {
+  background-color: $gray-mercury-e5;
 }
 
 .form__selector--radio:checked + .form__selector-indicator::before {
