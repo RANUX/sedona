@@ -1698,10 +1698,12 @@ input[type="radio"].visually-hidden {
     width: 480px; }
   .form__label--padding {
     margin-left: 0; }
-  .form__legend--communication::before {
-    width: 280px; }
-  .form__legend--communication::after {
-    width: 280px; }
+  .form__legend--communication {
+    margin-bottom: 60px; }
+    .form__legend--communication::before {
+      width: 280px; }
+    .form__legend--communication::after {
+      width: 280px; }
   .form__legend--sights::before {
     width: 280px; }
   .form__legend--sights::after {
